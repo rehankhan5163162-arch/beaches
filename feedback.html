@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - BeautyOfBeaches</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            font-size: 2rem;
+            color: #ddd;
+            transition: color 0.2s;
+        }
+
+        .rating input:checked~label,
+        .rating label:hover,
+        .rating label:hover~label {
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fa-solid fa-umbrella-beach"></i> BeautyOfBeaches
+            </a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="north.html">North Zone</a></li>
+                <li><a href="south.html">South Zone</a></li>
+                <li><a href="east.html">East Zone</a></li>
+                <li><a href="west.html">West Zone</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header section-padding"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h1>Feedback</h1>
+            <p>Help us improve your experience.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="fade-in" style="max-width: 600px; margin: 0 auto;">
+                <h2 class="text-center mb-5">Rate Your Experience</h2>
+                <form id="feedbackForm"
+                    style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 10px; font-weight: 500;">How would you rate our
+                            website?</label>
+                        <div class="rating">
+                            <input type="radio" name="rating" id="star5" value="5" required><label for="star5"
+                                title="5 stars">★</label>
+                            <input type="radio" name="rating" id="star4" value="4"><label for="star4"
+                                title="4 stars">★</label>
+                            <input type="radio" name="rating" id="star3" value="3"><label for="star3"
+                                title="3 stars">★</label>
+                            <input type="radio" name="rating" id="star2" value="2"><label for="star2"
+                                title="2 stars">★</label>
+                            <input type="radio" name="rating" id="star1" value="1"><label for="star1"
+                                title="1 star">★</label>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Your Name</label>
+                        <input type="text" id="name" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Your Email</label>
+                        <input type="email" id="email" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Comments</label>
+                        <textarea id="comments" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; height: 100px; resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 BeautyOfBeaches. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comments = document.getElementById('comments').value;
+            const rating = document.querySelector('input[name="rating"]:checked');
+
+            if (!name || !email || !comments || !rating) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Simulate submission
+            alert(`Thank you, ${name}! We appreciate your ${rating.value}-star rating.`);
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

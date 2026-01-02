@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Zone Beaches - BeautyOfBeaches</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .beach-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s;
+        }
+
+        .beach-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .beach-img {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .beach-content {
+            padding: 30px;
+        }
+
+        .beach-meta {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .beach-meta i {
+            color: var(--primary-color);
+        }
+
+        @media (min-width: 768px) {
+            .beach-card {
+                flex-direction: row;
+            }
+
+            .beach-img {
+                width: 40%;
+                height: auto;
+            }
+
+            .beach-content {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fa-solid fa-umbrella-beach"></i> BeautyOfBeaches
+            </a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="north.html">North Zone</a></li>
+                <li><a href="south.html">South Zone</a></li>
+                <li><a href="east.html" class="active">East Zone</a></li>
+                <li><a href="west.html">West Zone</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header section-padding"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h1>East Zone Beaches</h1>
+            <p>Where the sun rises over exotic sands and cultures.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Beach 1 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Maya Bay, Thailand</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Koh Phi Phi, Thailand</span>
+                        <span><i class="fas fa-sun"></i> Best time: Nov - Apr</span>
+                    </div>
+                    <p>Made famous by the movie "The Beach", it offers stunning limestone cliffs and clear waters.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Check for closure dates as it closes periodically for ecological recovery.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(7.6778, 98.7667)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 2 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Nusa Dua, Bali</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+                        <span><i class="fas fa-sun"></i> Best time: Apr - Oct</span>
+                    </div>
+                    <p>A luxurious beach resort area known for its clean white sands and calm waters.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Great for water sports and family vacations due to calm tides.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(-8.7946, 115.2255)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 3 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>El Nido, Philippines</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Palawan, Philippines</span>
+                        <span><i class="fas fa-sun"></i> Best time: Dec - May</span>
+                    </div>
+                    <p>Famous for its dramatic limestone formations and secret lagoons.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Take an island-hopping tour to discover hidden beaches.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(11.1956, 119.4189)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 4 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Radhanagar Beach, India</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Havelock Island, India</span>
+                        <span><i class="fas fa-sun"></i> Best time: Oct - May</span>
+                    </div>
+                    <p>Often ranked as the best beach in Asia, known for its mesmerizing sunset and white sand.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>No water sports allowed here, making it perfect for swimming and relaxation.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(11.9846, 92.9515)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 5 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Maldive Islands</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Maldives</span>
+                        <span><i class="fas fa-sun"></i> Best time: Nov - Apr</span>
+                    </div>
+                    <p>The epitome of tropical paradise with overwater villas and vibrant coral reefs.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Perfect for honeymooners and diving enthusiasts.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(3.2028, 73.2207)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 BeautyOfBeaches. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/zones.js"></script>
+</body>
+
+</html>

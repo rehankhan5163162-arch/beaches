@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries - BeautyOfBeaches</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fa-solid fa-umbrella-beach"></i> BeautyOfBeaches
+            </a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="north.html">North Zone</a></li>
+                <li><a href="south.html">South Zone</a></li>
+                <li><a href="east.html">East Zone</a></li>
+                <li><a href="west.html">West Zone</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header section-padding"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h1>Queries</h1>
+            <p>Have a specific question? Ask us anything about beaches.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="fade-in" style="max-width: 600px; margin: 0 auto;">
+                <h2 class="text-center mb-5">Submit Your Query</h2>
+                <form id="queryForm"
+                    style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Your Name</label>
+                        <input type="text" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Your Email</label>
+                        <input type="email" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Query Type</label>
+                        <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            <option>General Information</option>
+                            <option>Travel Advice</option>
+                            <option>Partnership</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Your Question</label>
+                        <textarea required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; height: 150px; resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Query</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 BeautyOfBeaches. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('queryForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Your query has been submitted successfully. We will respond shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

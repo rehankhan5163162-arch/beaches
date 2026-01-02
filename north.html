@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Zone Beaches - BeautyOfBeaches</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .beach-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s;
+        }
+
+        .beach-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .beach-img {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .beach-content {
+            padding: 30px;
+        }
+
+        .beach-meta {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .beach-meta i {
+            color: var(--primary-color);
+        }
+
+        @media (min-width: 768px) {
+            .beach-card {
+                flex-direction: row;
+            }
+
+            .beach-img {
+                width: 40%;
+                height: auto;
+            }
+
+            .beach-content {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fa-solid fa-umbrella-beach"></i> BeautyOfBeaches
+            </a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="north.html" class="active">North Zone</a></li>
+                <li><a href="south.html">South Zone</a></li>
+                <li><a href="east.html">East Zone</a></li>
+                <li><a href="west.html">West Zone</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header section-padding"
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h1>North Zone Beaches</h1>
+            <p>Discover the rugged beauty and pristine shores of the North.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Beach 1 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1520942702018-08622ee79dd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Reynisfjara Beach, Iceland</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Vik, Iceland</span>
+                        <span><i class="fas fa-sun"></i> Best time: Jun - Aug</span>
+                    </div>
+                    <p>Famous for its black sand, basalt columns, and powerful Atlantic waves. A truly unique and
+                        dramatic landscape.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Be careful of "sneaker waves" which can be dangerous. Stay well back from the water's edge.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(63.4057, -19.0716)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 2 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Lofoten Islands Beaches, Norway</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Nordland, Norway</span>
+                        <span><i class="fas fa-sun"></i> Best time: May - Sep</span>
+                    </div>
+                    <p>Arctic beaches with crystal clear turquoise water and white sand, surrounded by dramatic
+                        mountains.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Bring warm clothing even in summer. Great for surfing and midnight sun photography.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(68.2086, 13.5577)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 3 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1501179691627-2807c30a7563?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Cannon Beach, USA</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Oregon, USA</span>
+                        <span><i class="fas fa-sun"></i> Best time: Jul - Sep</span>
+                    </div>
+                    <p>Iconic for Haystack Rock, this vast sandy beach offers stunning sunsets and tide pools.</p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Explore the tide pools at low tide to see starfish and anemones.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(45.8918, -123.9615)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 4 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1516815231560-8f41ec531527?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Durness Beach, Scotland</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Sutherland, Scotland</span>
+                        <span><i class="fas fa-sun"></i> Best time: May - Aug</span>
+                    </div>
+                    <p>A spectacular coastline with rocky cliffs, dunes, and turquoise waters that rival the Caribbean.
+                    </p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Visit Smoo Cave nearby for a unique geological experience.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(58.5694, -4.7456)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+            <!-- Beach 5 -->
+            <div class="beach-card fade-in">
+                <div class="beach-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')">
+                </div>
+                <div class="beach-content">
+                    <h2>Long Beach, Canada</h2>
+                    <div class="beach-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Tofino, BC, Canada</span>
+                        <span><i class="fas fa-sun"></i> Best time: Jun - Sep</span>
+                    </div>
+                    <p>Located in Pacific Rim National Park Reserve, it's the longest sand beach on Vancouver Island.
+                    </p>
+                    <h4 style="margin-top: 15px;">Travel Tips:</h4>
+                    <p>Popular for storm watching in winter and surfing year-round.</p>
+                    <button class="btn" style="margin-top: 20px;" onclick="showOnMap(49.0740, -125.7070)">Show on
+                        Map</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 BeautyOfBeaches. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/zones.js"></script>
+</body>
+
+</html>

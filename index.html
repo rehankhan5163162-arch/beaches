@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyOfBeaches - Explore the World's Best Beaches</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-umbrella-beach"></i> BeautyOfBeaches
+            </a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/north.html">North Zone</a></li>
+                <li><a href="pages/south.html">South Zone</a></li>
+                <li><a href="pages/east.html">East Zone</a></li>
+                <li><a href="pages/west.html">West Zone</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/booking.html">Booking</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active"
+                style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Discover Paradise</h1>
+                    <p>Explore the most breathtaking beaches from around the globe.</p>
+                    <a href="#zones" class="btn">Start Exploring</a>
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Crystal Clear Waters</h1>
+                    <p>Dive into the deep blue and experience serenity.</p>
+                    <a href="pages/gallery.html" class="btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1473116763249-56381a34415f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Golden Sands</h1>
+                    <p>Walk on the finest sands and feel the warmth.</p>
+                    <a href="pages/about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide">&#10094;</button>
+            <button class="next-slide">&#10095;</button>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro section-padding">
+        <div class="container text-center fade-in">
+            <h2>Welcome to BeautyOfBeaches</h2>
+            <p style="max-width: 800px; margin: 20px auto; font-size: 1.1rem;">
+                Our mission is to bring the world's most stunning coastlines to your screen.
+                Whether you're planning your next vacation or just daydreaming of the ocean,
+                we've curated a collection of the finest beaches from the North, South, East, and West.
+                Dive in and discover the unique charm of each zone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Zones Section -->
+    <section id="zones" class="zones section-padding" style="background-color: #f0f8ff;">
+        <div class="container">
+            <h2 class="text-center mb-5">Explore by Zone</h2>
+            <div class="zone-grid">
+                <!-- North Zone -->
+                <a href="pages/north.html" class="zone-card fade-in">
+                    <div class="zone-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="zone-info">
+                        <h3>North Zone</h3>
+                        <p>Rugged coastlines and hidden gems.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <!-- South Zone -->
+                <a href="pages/south.html" class="zone-card fade-in">
+                    <div class="zone-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1537964669298-9f1dd078b44a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="zone-info">
+                        <h3>South Zone</h3>
+                        <p>Tropical paradises and warm waters.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <!-- East Zone -->
+                <a href="pages/east.html" class="zone-card fade-in">
+                    <div class="zone-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="zone-info">
+                        <h3>East Zone</h3>
+                        <p>Sunrise views and exotic cultures.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+                <!-- West Zone -->
+                <a href="pages/west.html" class="zone-card fade-in">
+                    <div class="zone-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1519865885898-a54a6f2c7dad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="zone-info">
+                        <h3>West Zone</h3>
+                        <p>Sunset horizons and iconic piers.</p>
+                        <span class="explore-link">Explore <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement Section -->
+    <section class="ads section-padding">
+        <div class="container">
+            <div class="ad-banner fade-in">
+                <div class="ad-content">
+                    <h3>Plan Your Perfect Getaway</h3>
+                    <p>Book flights, hotels, and tours at the best prices.</p>
+                    <a href="pages/booking.html" class="btn"
+                        style="background-color: var(--white); color: var(--primary-color);">Book Now</a>
+                    <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px;">
+                        <p>Want to take this info with you?</p>
+                        <button onclick="generatePDF()" class="btn"
+                            style="background-color: var(--secondary-color); color: var(--white); border: 1px solid white;">Download
+                            Beach Guide PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BeautyOfBeaches</h3>
+                    <p>Your ultimate guide to the world's most beautiful coastlines. Explore, dream, and discover.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="pages/sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/queries.html">Queries</a></li>
+                        <li><a href="pages/feedback.html">Feedback</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for the latest beach updates.</p>
+                    <form style="margin-top: 15px; display: flex;">
+                        <input type="email" placeholder="Your email"
+                            style="padding: 10px; border: none; border-radius: 5px 0 0 5px; width: 100%;">
+                        <button type="submit"
+                            style="padding: 10px; background-color: var(--primary-color); border: none; border-radius: 0 5px 5px 0; cursor: pointer;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 BeautyOfBeaches. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="assets/js/pdf-gen.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
